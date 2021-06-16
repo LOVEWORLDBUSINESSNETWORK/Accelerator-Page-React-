@@ -1,3 +1,8 @@
+import img1 from '../../images/svg1.svg';
+import img2 from '../../images/svg2.svg';
+import img3 from '../../images/svg3.svg';
+import profile from '../../images/profile.jpg';
+
 export const homeObjOne = {
 	lightBg: false,
 	primary: true,
@@ -9,7 +14,7 @@ export const homeObjOne = {
 	headline: 'Lead Generation Specialist for Online Businesses',
 	lightText: true,
 	topline: 'Marketing Agency',
-	img: require('../../images/svg1.svg'),
+	img: img1,
 	alt: 'Image',
 	start: '',
 };
@@ -25,7 +30,7 @@ export const homeObjTwo = {
 	headline: 'Ultra helped me increase my revenue by over 3X in less than 3 months!',
 	lightText: false,
 	topline: 'Sarah Jeni',
-	img: require('../../images/profile.jpg'),
+	img: profile,
 	alt: 'Image',
 	start: 'true',
 };
@@ -41,7 +46,7 @@ export const homeObjThree = {
 	headline: 'Lead Generation Specialist for Online Businesses',
 	lightText: true,
 	topline: 'Marketing Agency',
-	img: require('../../images/svg1.svg'),
+	img: img2,
 	alt: 'Image',
 	start: '',
 };
@@ -57,7 +62,7 @@ export const homeObjFour = {
 	headline: 'Lead Generation Specialist for Online Businesses',
 	lightText: true,
 	topline: 'Marketing Agency',
-	img: require('../../images/svg1.svg'),
+	img: img3,
 	alt: 'Image',
 	start: 'true',
 };

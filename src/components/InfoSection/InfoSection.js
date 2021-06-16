@@ -39,4 +39,4 @@ const InfoSection = ( { primary, lightBg, imgStart, lightTopLine, lightText, lig
 	);
 };
 
-export default InfoSection
+export default InfoSection;
