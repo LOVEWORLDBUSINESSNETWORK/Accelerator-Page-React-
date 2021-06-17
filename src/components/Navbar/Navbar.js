@@ -40,27 +40,32 @@ const Navbar = () => {
 					<NavMenu onClick={handleClick} click={click}>
 						<NavItem>
 							<NavLink to='/'>
-								Home
+								LBN
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink to='/services'>
-								Services
+								Update
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink to='/products'>
-								Products
+								Resources
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink to='/about'>
-								About
+								StartUp Fund
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink to='/faq'>
-								FAQ
+								Exhibition
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink to='/faq'>
+								Business Connect
 							</NavLink>
 						</NavItem>
 
