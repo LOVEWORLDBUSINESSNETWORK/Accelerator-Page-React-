@@ -1,90 +1,108 @@
-import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { Button } from '../../globalStyles'
-import { FooterContainer, FooterSubscription, FooterSubHeading, FooterSubText, Form, FormInput, FooterLinksContainer, FooterLinksWrapper, FooterLinksItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, SocialIcon, WebsiteRight, SocialIcons, SocialIconLink } from './Footer.elements'
-
+import React from "react";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import {
+  FooterContainer,
+  FooterLinksContainer,
+  FooterLinksWrapper,
+  FooterLinkWrapper,
+  FooterLinksItems,
+  FooterLinkTitle,
+  FooterLink,
+  FooterText,
+  IdMedia,
+  IdWrap,
+  IdCopyright,
+  SocialIconLink,
+  SocialIconWrapper,
+  IdCreation,
+  IdName,
+  IdNameSub
+} from "./Footer.elements";
+import footerbg from "../../images/footerbg.png"
 
 const Footer = () => {
-	return (
-		<FooterContainer>
-			<FooterSubscription>
-				<FooterSubHeading>
-					Join our exclusive membership to receive the latest news and trends
-				</FooterSubHeading>
-				<FooterSubText>
-					You can unsubscribe at any time.
-				</FooterSubText>
-				<Form>
-					<FormInput name="email" type="email" placeholder="Your Email" />
-					<Button fontBig>Subscribe</Button>
-				</Form>
-			</FooterSubscription>
-			<FooterLinksContainer>
-				<FooterLinksWrapper>
-					<FooterLinksItems>
-						<FooterLinkTitle>About Us</FooterLinkTitle>
-						<FooterLink to='/sign-up'>How it works</FooterLink>
-						<FooterLink to='/'>Testimonials</FooterLink>
-						<FooterLink to='/'>Careers</FooterLink>
-						<FooterLink to='/'>Investors</FooterLink>
-						<FooterLink to='/'>Terms of Service</FooterLink>
-					</FooterLinksItems>
-					<FooterLinksItems>
-						<FooterLinkTitle>Contact Us</FooterLinkTitle>
-						<FooterLink to='/sign-up'>How it works</FooterLink>
-						<FooterLink to='/'>Testimonials</FooterLink>
-						<FooterLink to='/'>Careers</FooterLink>
-						<FooterLink to='/'>Investors</FooterLink>
-						<FooterLink to='/'>Terms of Service</FooterLink>
-					</FooterLinksItems>
-				</FooterLinksWrapper>
-				<FooterLinksWrapper>
-					<FooterLinksItems>
-						<FooterLinkTitle>Videos</FooterLinkTitle>
-						<FooterLink to='/sign-up'>How it works</FooterLink>
-						<FooterLink to='/'>Testimonials</FooterLink>
-						<FooterLink to='/'>Careers</FooterLink>
-						<FooterLink to='/'>Investors</FooterLink>
-						<FooterLink to='/'>Terms of Service</FooterLink>
-					</FooterLinksItems>
-					<FooterLinksItems>
-						<FooterLinkTitle>Social Media</FooterLinkTitle>
-						<FooterLink to='/sign-up'>How it works</FooterLink>
-						<FooterLink to='/'>Testimonials</FooterLink>
-						<FooterLink to='/'>Careers</FooterLink>
-						<FooterLink to='/'>Investors</FooterLink>
-						<FooterLink to='/'>Terms of Service</FooterLink>
-					</FooterLinksItems> 
-				</FooterLinksWrapper>
-			</FooterLinksContainer>
-			<SocialMedia>
-				<SocialMediaWrap>
-					<SocialLogo to='/'>
-						<SocialIcon />
-						ULTRA
-					</SocialLogo>
-					<WebsiteRight>ULTRA ® 2021</WebsiteRight>
-					<SocialIcons>
-						<SocialIconLink href='/' target="_blank" aria-label="Facebook">
-							<FaFacebook />
-						</SocialIconLink>
-						<SocialIconLink href='/' target="_blank" aria-label="Instagram">
-							<FaInstagram />
-						</SocialIconLink>
-						<SocialIconLink href='/' target="_blank" aria-label="Youtube" rel="noopener noreferrer">
-							<FaYoutube />
-						</SocialIconLink>
-						<SocialIconLink href='/' target="_blank" aria-label="Twitter">
-							<FaTwitter />
-						</SocialIconLink>
-						<SocialIconLink href='/' target="_blank" aria-label="Linkedin">
-							<FaLinkedin />
-						</SocialIconLink>
-					</SocialIcons>
-				</SocialMediaWrap>
-			</SocialMedia>
-		</FooterContainer>
-	)
-}
+  return (
+    <FooterContainer style={{
+      backgroundImage: `url(${footerbg})`,
+      backgroundRepeat: "no-repeat",
+      width: "100%",
+      height: "700px",
+    }}>
+      <FooterLinksContainer>
+        <FooterLinkWrapper>
+            <FooterText>
+              Connect on the loveworld next
+              Platform and engage, pitch your
+              business ideas and exhibit your 
+              products. 
+            </FooterText>
+            <SocialIconWrapper>
+              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                aria-label="Youtube"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube />
+              </SocialIconLink>
+              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+                <FaTwitter />
+              </SocialIconLink>
+              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIconWrapper>
+        </FooterLinkWrapper>
+        <FooterLinksWrapper>
+          <FooterLinksItems>
+            <FooterLinkTitle>LOVEWORLD NEXT</FooterLinkTitle>
+            <FooterLink to="/sign-up">About</FooterLink>
+            <FooterLink to="/">Terms of Use</FooterLink>
+            <FooterLink to="/">Privacy Policy</FooterLink>
+            <FooterLink to="/">How it works</FooterLink>
+            <FooterLink to="/">Contact Us</FooterLink>
+          </FooterLinksItems>
+          <FooterLinksItems>
+            <FooterLinkTitle>SUPPORT</FooterLinkTitle>
+            <FooterLink to="/sign-up">Support Center</FooterLink>
+            <FooterLink to="/">24hr Service</FooterLink>
+            <FooterLink to="/">Quick Chat</FooterLink>
+          </FooterLinksItems>
+          <FooterLinksItems>
+            <FooterLinkTitle>CONTACT</FooterLinkTitle>
+            <FooterLink to="/sign-up">Whatspp</FooterLink>
+            <FooterLink to="/">24 NYC Road, USA</FooterLink>
+          </FooterLinksItems>
+        </FooterLinksWrapper>
+      </FooterLinksContainer>
+      <IdMedia>
+        <IdWrap>
+          <IdCopyright>
+            Copyright 2021 loveworldnext
+          </IdCopyright>
+          <IdCreation>
+            <IdName>
+              Created by: 
+              <IdNameSub> Loveworld Next</IdNameSub>
+            </IdName>
+          </IdCreation>
+        </IdWrap>
+      </IdMedia>
+    </FooterContainer>
+  );
+};
 
-export default Footer
+
+export default Footer;

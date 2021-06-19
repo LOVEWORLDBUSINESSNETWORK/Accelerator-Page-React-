@@ -1,13 +1,10 @@
-import React from 'react';
-import { homeObjThree } from './Data';
-import { InfoSection } from '../../components';
+import React from "react";
 
 const SignUp = () => {
-	return (
-		<>
-			<InfoSection {...homeObjThree} />
-		</>
-	)
-}
+  return (
+    <>
+    </>
+  );
+};
 
 export default SignUp;

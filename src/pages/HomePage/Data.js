@@ -1,68 +1,49 @@
-import img1 from '../../images/svg1.svg'
-import img2 from '../../images/svg2.svg'
-import img3 from '../../images/svg3.svg'
-import profile from '../../images/profile.jpg';
+import img1 from "../../images/svg1.svg";
+
+export const homeObjZero = {
+  lightBg: false,
+  primary: true,
+  imgStart: "start",
+  topTextLine: true,
+  midTextLine: true,
+  buttonLabel: " Apply Now ",
+  description: " ",
+  headline: "Loveworld Accelerator Program",
+  lightText: true,
+  textline: "Loveworld",
+  midline: "Accelerator",
+  bottomline: "Program",
+  start: " ",
+};
 
 export const homeObjOne = {
-	lightBg: false,
-	primary: true,
-	imgStart: '',
-	lightTopLine: true,
-	lightTextDesc: true,
-	buttonLabel: 'Get Started',
-	description: 'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals',
-	headline: 'Lead Generation Specialist for Online Businesses',
-	lightText: true,
-	topline: 'Marketing Agency',
-	img: img1,
-	alt: 'Image',
-	start: '',
+  lightBg: false,
+  primary: true,
+  imgStart: "",
+  lightTopLine: true,
+  lightTextDesc: true,
+  buttonLabel: " Apply Now ",
+  description: " ",
+  headline: "Loveworld Accelerator Program",
+  lightText: true,
+  topline: " ",
+  img: img1,
+  alt: "Image",
+  start: "",
 };
 
-export const homeObjTwo = {
-	lightBg: true,
-	primary: false,
-	imgStart: 'start',
-	lightTopLine: false,
-	lightTextDesc: false,
-	buttonLabel: 'View Case Study',
-	description: "Their team is wonderful! I can't believe I didn't start working with them earlier",
-	headline: 'Ultra helped me increase my revenue by over 3X in less than 3 months!',
-	lightText: false,
-	topline: 'Sarah Jeni',
-	img: profile,
-	alt: 'Image',
-	start: 'true',
-};
-
-export const homeObjThree = {
-	lightBg: false,
-	primary: true,
-	imgStart: '',
-	lightTopLine: true,
-	lightTextDesc: true,
-	buttonLabel: 'Get Started',
-	description: 'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals',
-	headline: 'Lead Generation Specialist for Online Businesses',
-	lightText: true,
-	topline: 'Marketing Agency',
-	img: img2,
-	alt: 'Image',
-	start: '',
-};
-
-export const homeObjFour = {
-	lightBg: false,
-	primary: true,
-	imgStart: 'start',
-	lightTopLine: true,
-	lightTextDesc: true,
-	buttonLabel: 'Get Started',
-	description: 'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals',
-	headline: 'Lead Generation Specialist for Online Businesses',
-	lightText: true,
-	topline: 'Marketing Agency',
-	img: img3,
-	alt: 'Image',
-	start: 'true',
+export const homeObjCourse = {
+  lightBg: false,
+  primary: true,
+  imgStart: "",
+  lightTopLine: true,
+  lightTextDesc: true,
+  linklabel: "View Courses ",
+  description:
+    "Want to start a business but don’t know where to begin? Checkout the most courses that your peers are taking before diving into  the business world, All you need to be a successful entrepreneur all on one site to help you get easy access to resources, investors and marketplace",
+  headline: "Popular courses to attend",
+  lightText: true,
+  topline: "COURSES",
+  alt: "Image",
+  start: "",
 };

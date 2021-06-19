@@ -1,4 +1,11 @@
-export { default as Navbar } from './Navbar/Navbar';
-export { default as Footer } from './Footer/Footer';
-export { default as InfoSection } from './InfoSection/InfoSection';
-export { default as Pricing } from './Pricing/Pricing'
+export { default as Navbar } from "./Navbar/Navbar";
+export { default as Footer } from "./Footer/Footer";
+export { default as Innovate } from "./Innovate/Innovate";
+export { default as Header } from "./Header/Header";
+export { default as CourseSection } from "./CourseSection/CourseSection";
+export { default as LBNChannels } from "./LBNChannels/LBNChannels";
+export { default as Alumni } from "./Alumni/Alumni"
+export { default as UpcomingWebinars } from "./UpcomingWebinars/UpcomingWebinars"
+export { default as Articles } from "./Articles/Articles"
+export { default as WebinarIntro } from './WebinarIntro/WebinarIntro'
+export { default as WebinarSection } from './WebinarSection/WebinarSection'

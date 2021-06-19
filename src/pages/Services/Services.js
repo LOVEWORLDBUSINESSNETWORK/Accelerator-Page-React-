@@ -1,14 +1,10 @@
-import React from 'react';
-import { homeObjFour } from './Data';
-import { InfoSection, Pricing } from '../../components';
+import React from "react";
 
 const Services = () => {
-	return (
-		<>
-			<Pricing />
-			<InfoSection {...homeObjFour} />
-		</>
-	)
-}
+  return (
+    <>
+    </>
+  );
+};
 
 export default Services;
