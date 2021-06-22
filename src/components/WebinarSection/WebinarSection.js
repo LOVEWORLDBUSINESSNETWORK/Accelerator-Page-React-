@@ -1,30 +1,50 @@
 import React from "react";
-import bg1 from "../../images/bg1.png";
+// import bg2 from "../../images/bg2.png";
 import { Container } from "../../globalStyles";
-import { WebinarSec, WebinarRow, TextWrapper, Heading, Link, ActionArrow } from "./WebinarSection.elements";
+import {
+  WebinarSec,
+  WebinarContent,
+  TextWrapper,
+  Heading,
+  WebinarLink,
+  ActionArrow,
+} from "./WebinarSection.elements";
 
-const WebinarSection = (imgStart, headline ) => {
+const WebinarSection = ({ headline, bg1, bg2 }) => {
   return (
     <>
       <WebinarSec>
         <Container>
-          <WebinarRow
-            imgStart={imgStart}
+          <WebinarContent
             style={{
-              backgroundImage: `url(${bg1}`,
+              backgroundImage: `url(${bg1})`,
               backgroundRepeat: "no-repeat",
               width: "1240px",
-              height: "600px",
             }}
           >
             <TextWrapper>
               <Heading>{headline}</Heading>
-              <Link to="join">
-                  Join Now
-                  <ActionArrow />
-              </Link>
+              <WebinarLink to="join">
+                Join Now
+                <ActionArrow />
+              </WebinarLink>
             </TextWrapper>
-          </WebinarRow>
+          </WebinarContent>
+          <WebinarContent
+            style={{
+              backgroundImage: `url(${bg2})`,
+              backgroundRepeat: "no-repeat",
+              width: "1240px",
+            }}
+          >
+            <TextWrapper>
+              <Heading>{headline}</Heading>
+              <WebinarLink to="join">
+                Join Now
+                <ActionArrow />
+              </WebinarLink>
+            </TextWrapper>
+          </WebinarContent>
         </Container>
       </WebinarSec>
     </>

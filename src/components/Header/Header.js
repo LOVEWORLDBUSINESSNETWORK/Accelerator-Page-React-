@@ -37,6 +37,7 @@ const Header = ({
               backgroundRepeat: "no-repeat",
               width: "1240px",
               height: "600px",
+              background: "#ffffff"
             }}
           >
             <HeadColumn>
@@ -46,7 +47,7 @@ const Header = ({
                 <BottomLine bottomTextLine={bottomTextLine}>
                   {bottomline}
                 </BottomLine>
-                <Link to="apply">
+                <Link to="/apply">
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
                   </Button>

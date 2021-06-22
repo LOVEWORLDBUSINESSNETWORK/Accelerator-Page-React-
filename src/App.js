@@ -6,6 +6,7 @@ import Home from "./pages/HomePage/Home";
 import Services from "./pages/Services/Services";
 import Webinar from "./pages/Webinar/Webinar";
 import SignUp from "./pages/SignUp/SignUp";
+import ApplicationOneHome from "./pages/Application/ApplicationOneHome";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/services" exact component={Services} />
         <Route path="/webinars" exact component={Webinar} />
         <Route path="/sign-up" exact component={SignUp} />
+        <Route path="/apply" exact component={ApplicationOneHome} />
       </Switch>
       <Footer />
     </Router>

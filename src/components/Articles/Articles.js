@@ -13,7 +13,7 @@ import {
   Img
 } from "../Articles/Articles.elements";
 import articleImage from "../../images/article1.png";
-import articlebg from "../../images/articlebg.jpg"
+import articlebg from "../../images/articlebg.jpg";
 
 const Articles = ( {TopLine, Description} ) => {
   return (

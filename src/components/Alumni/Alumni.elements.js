@@ -49,7 +49,7 @@ export const AlumsColumnTwo = styled.div`
 `;
 
 export const AlumsHead = styled.p`
-  max-width: 200px;
+  max-width: 300px;
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: normal;

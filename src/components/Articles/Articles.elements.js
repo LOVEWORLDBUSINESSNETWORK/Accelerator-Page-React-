@@ -23,13 +23,9 @@ export const ArticleRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 500px;
 `;
 
 export const ArticleColumn = styled.div`
-  margin-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
@@ -46,15 +42,7 @@ export const ArticleHead = styled.p`
   max-width: 300px;
   margin-bottom: 30px;
   font-size: 24px;
-  font-weight: 500;
-  line-height: 120%;
-`;
-
-export const ArticleMainText = styled.h1`
-  max-width: 700px;
-  margin-bottom: 30px;
-  font-size: 64px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 120%;
 `;
 

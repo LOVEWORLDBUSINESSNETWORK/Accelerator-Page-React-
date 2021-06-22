@@ -82,7 +82,7 @@ export const FooterLinksWrapper = styled.div`
   }
 `;
 
-export const FooterLinkWrapper = styled.div `
+export const FooterLinkWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -112,7 +112,7 @@ export const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
   font-weight: 600;
   font-size: 23px;
-  color: #FFC947;
+  color: #ffc947;
 `;
 
 export const FooterLink = styled(Link)`
@@ -136,7 +136,7 @@ export const FooterText = styled.p`
 
 export const SocialIconLink = styled(Link)`
   color: #fff;
-  margin-bottom: 1.0rem;
+  margin-bottom: 1rem;
   width: 30px;
 `;
 
@@ -195,4 +195,4 @@ export const IdNameSub = styled.p`
   color: #fff;
   font-weight: 600;
   display: inline;
-`
+`;
