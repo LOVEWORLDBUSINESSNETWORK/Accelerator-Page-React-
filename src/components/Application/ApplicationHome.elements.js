@@ -1,9 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
-import { Dropdown } from "react-bootstrap";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+import { Form } from "react-bootstrap";
 
 export const Apply = styled.div`
   background-color: #fff8f2;
@@ -31,7 +28,7 @@ export const FormTitle = styled.div`
   display: flex;
   align-items: center;
   color: #000000;
-  margin-bottoom: 10px;
+  margin-bottom: 10px;
 `;
 
 export const FormDescription = styled.div`
@@ -68,6 +65,7 @@ export const FromNoteImp = styled.div`
 
 export const ADropdown = styled.div`
   margin-bottom: 45px;
+  width: 715px;
 `;
 
 export const DropDownLabel = styled.div`
@@ -77,44 +75,8 @@ export const DropDownLabel = styled.div`
   display: flex;
   align-items: center;
   color: #000000;
+  margin-bottom: 10px;
 `;
-
-export const ADropdownToggle = styled(DropdownToggle)`
-  width: 715px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  height: 50px;
-  background-color: #fff;
-  box-shadow: 0px 5px 10px 1px rgba(232, 232, 232, 0.25);
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-weight: normal;
-  font-size: 14px;
-  margin-top: 10px;
-`;
-
-export const ADropdownMenu = styled(DropdownMenu)`
-  width: 710px;
-  background: #FBFBFB;
-  margin-top: 15px;
-  padding: 25px 50px;
-`;
-
-export const ADropdownItem = styled(DropdownItem)`
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  margin: 10px 0;
-`;
-
-export const DropDownTog = styled.p``;
 
 export const FormLink = styled(Link)`
   width: 154.28px;
@@ -141,3 +103,19 @@ export const FormButton = styled.div`
     background: #fff;
   }
 `;
+
+export const Forms = styled(Form)`
+  font-size: 18px;
+  line-height: 27px;
+  display: block;
+  align-items: center;
+  color: red;
+`;
+
+export const emailAddress = css`
+   &{color} red; 
+ `
+
+ export const Component = styled.div`
+  color: &{emailAddress}
+ `

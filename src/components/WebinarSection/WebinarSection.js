@@ -91,7 +91,7 @@ const WebinarSection = () => {
               }}
             >
               <TextWrapper>
-                <Heading>Employing the Right staffs for your Company</Heading>
+                <Heading>Employing the Right Company staffs</Heading>
                 <WebinarDate>
                   21ST JUNE, 2021
                   <WebinarTime>1:30PM GMT</WebinarTime>

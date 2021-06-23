@@ -10,3 +10,4 @@ export { default as Articles } from "./Articles/Articles"
 export { default as WebinarIntro } from './WebinarIntro/WebinarIntro'
 export { default as WebinarSection } from './WebinarSection/WebinarSection'
 export { default as ApplicationOneHome } from './Application/ApplicationOneHome'
+export { default as ApplicationTwoHome } from './Application/ApplicationTwoHome'

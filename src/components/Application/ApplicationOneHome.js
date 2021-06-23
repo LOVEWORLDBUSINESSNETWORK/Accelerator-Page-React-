@@ -1,6 +1,8 @@
 import { Container } from "../../globalStyles";
 import React from 'react'
 import Select from 'react-select'
+import { ProgressBar } from "react-bootstrap";
+import makeAnimated from 'react-select/animated';
 import {
   Apply, 
   ApplyForm,
@@ -13,16 +15,7 @@ import {
   FormLink,
   ADropdown,
   FormButton
-} from "./ApplicationOneHome.elements";
-
-const optionsSize = [
-	{ value: 'foodandagric', label: 'Food and Agric' },
-  { value: 'it', label: 'IT' },
-  { value: 'fintech', label: 'Fin Tech' },
-  { value: 'fashion', label: 'Fashion' },
-  { value: 'films', label: 'Film and Movies' },
-  { value: 'education', label: 'Education' },
-]
+} from "./ApplicationHome.elements";
 
 function customTheme(theme){
   return{
@@ -35,7 +28,9 @@ function customTheme(theme){
   };
 }
 
-const ApplicationOneHome = ({ data, setOrdered }) => {
+const animatedComponents = makeAnimated();
+
+const ApplicationOneHome = ({ now, data, setOrdered, category, choice, businessage }) => {
   return (
     <Apply>
       <Container>
@@ -56,7 +51,8 @@ const ApplicationOneHome = ({ data, setOrdered }) => {
               What category best describes your Business or Innovation?
             </DropDownLabel>
             <Select 
-              options={optionsSize}
+              components={animatedComponents}
+              options={category}
               theme={customTheme}
               className="mt-3"
               placeholder="Select a Category"
@@ -68,7 +64,7 @@ const ApplicationOneHome = ({ data, setOrdered }) => {
               Are you a business owner or Innovator?
             </DropDownLabel>
             <Select 
-              options={optionsSize}
+              options={choice}
               theme={customTheme}
               className="mt-3"
               placeholder="Select a Category"
@@ -80,18 +76,21 @@ const ApplicationOneHome = ({ data, setOrdered }) => {
               Business Age
             </DropDownLabel>
             <Select 
-              options={optionsSize}
+              options={businessage}
               theme={customTheme}
               className="mt-3"
               placeholder="Select a Category"
               autoFocus
             />
           </ADropdown>
-          <FormLink to='/'>
+          <FormLink to='/applicationtwo'>
             <FormButton>
               Continue
             </FormButton>
           </FormLink>
+
+          <ProgressBar variant='success' now={now} label={`${now}%`} animated />;
+
         </ApplyForm>
       </Container>
     </Apply>
@@ -99,8 +98,3 @@ const ApplicationOneHome = ({ data, setOrdered }) => {
 };
 
 export default ApplicationOneHome;
-
-
-
-
-        
