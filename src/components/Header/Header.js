@@ -37,7 +37,6 @@ const Header = ({
               backgroundRepeat: "no-repeat",
               width: "1240px",
               height: "600px",
-              background: "#ffffff"
             }}
           >
             <HeadColumn>

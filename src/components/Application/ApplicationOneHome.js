@@ -1,7 +1,8 @@
-import React from "react";
 import { Container } from "../../globalStyles";
+import React from 'react'
+import Select from 'react-select'
 import {
-  Apply,
+  Apply, 
   ApplyForm,
   Label,
   FormTitle,
@@ -9,15 +10,32 @@ import {
   FormNote,
   FromNoteImp,
   DropDownLabel,
-  DropDownTog,
-  DropDownToggle,
+  FormLink,
+  ADropdown,
+  FormButton
 } from "./ApplicationOneHome.elements";
-import { Dropdown } from "react-bootstrap";
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 
-const ApplicationOneHome = () => {
+const optionsSize = [
+	{ value: 'foodandagric', label: 'Food and Agric' },
+  { value: 'it', label: 'IT' },
+  { value: 'fintech', label: 'Fin Tech' },
+  { value: 'fashion', label: 'Fashion' },
+  { value: 'films', label: 'Film and Movies' },
+  { value: 'education', label: 'Education' },
+]
+
+function customTheme(theme){
+  return{
+    ...theme,
+    colors: {
+      ...theme.colors,
+      primary25: 'orange',
+      primary: 'green',
+    },
+  };
+}
+
+const ApplicationOneHome = ({ data, setOrdered }) => {
   return (
     <Apply>
       <Container>
@@ -33,20 +51,47 @@ const ApplicationOneHome = () => {
               to tick just one box. for each Segment
             </FormNote>
           </Label>
-          <Dropdown>
+          <ADropdown>
             <DropDownLabel>
               What category best describes your Business or Innovation?
             </DropDownLabel>
-            <DropdownToggle variant="success" id="dropdown-basic">
-              <DropDownTog>Select a Category</DropDownTog>
-            </DropdownToggle>
-
-            <DropdownMenu>
-              <DropdownItem href="#/action-1">Action</DropdownItem>
-              <DropdownItem href="#/action-2">Another action</DropdownItem>
-              <DropdownItem href="#/action-3">Something else</DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
+            <Select 
+              options={optionsSize}
+              theme={customTheme}
+              className="mt-3"
+              placeholder="Select a Category"
+              autoFocus
+            />
+          </ADropdown>
+          <ADropdown>
+            <DropDownLabel>
+              Are you a business owner or Innovator?
+            </DropDownLabel>
+            <Select 
+              options={optionsSize}
+              theme={customTheme}
+              className="mt-3"
+              placeholder="Select a Category"
+              autoFocus
+            />
+          </ADropdown>
+          <ADropdown>
+            <DropDownLabel>
+              Business Age
+            </DropDownLabel>
+            <Select 
+              options={optionsSize}
+              theme={customTheme}
+              className="mt-3"
+              placeholder="Select a Category"
+              autoFocus
+            />
+          </ADropdown>
+          <FormLink to='/'>
+            <FormButton>
+              Continue
+            </FormButton>
+          </FormLink>
         </ApplyForm>
       </Container>
     </Apply>
@@ -54,3 +99,8 @@ const ApplicationOneHome = () => {
 };
 
 export default ApplicationOneHome;
+
+
+
+
+        

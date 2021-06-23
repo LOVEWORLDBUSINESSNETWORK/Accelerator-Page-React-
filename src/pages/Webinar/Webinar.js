@@ -1,5 +1,5 @@
 import React from "react";
-import { homeObjWebinarSection, homeObjWebinarSectionTwo } from './Data';
+import { homeObjWebinarSection } from './Data';
 import { WebinarIntro, WebinarSection, Articles } from "../../components";
 
 const Webinar = () => {
@@ -7,7 +7,6 @@ const Webinar = () => {
     <>
       <WebinarIntro />
       <WebinarSection {...homeObjWebinarSection} />
-      <WebinarSection {...homeObjWebinarSectionTwo} />
       <Articles />
     </>
   );
