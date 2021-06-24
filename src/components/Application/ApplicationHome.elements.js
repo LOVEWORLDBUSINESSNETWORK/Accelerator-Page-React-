@@ -1,6 +1,7 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Form } from "react-bootstrap";
+import Select from "react-select";
 
 export const Apply = styled.div`
   background-color: #fff8f2;
@@ -33,7 +34,7 @@ export const FormTitle = styled.div`
 
 export const FormDescription = styled.div`
   font-style: normal;
-  font-weight: normal;
+  font-weight: 200;
   font-size: 18px;
   line-height: 27px;
   display: flex;
@@ -63,9 +64,57 @@ export const FromNoteImp = styled.div`
   color: #000000;
 `;
 
-export const ADropdown = styled.div`
+export const Dropdown = styled.div`
   margin-bottom: 45px;
   width: 715px;
+
+  >form {
+    font-weight: normal;
+
+    >label {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      margin-top: 20px;
+    }
+
+    >input {
+      width: 715px;
+      height: 60px;
+      background: #FFFFFF;
+      box-shadow: 0px 5px 10px 1px rgba(232, 232, 232, 0.25);
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      margin-top: 20px;
+      margin-bottom: 45px;
+      padding-left: 30px;
+      font-size: 18px;
+
+      ::placeholder {
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        font-weight: 200;
+        color: #000000;
+
+      }
+    }
+
+    >Select {
+      width: 347px;
+      height: 60px;
+      background: #fff;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      padding-left: 30px;
+    }
+  }
 `;
 
 export const DropDownLabel = styled.div`
@@ -100,7 +149,7 @@ export const FormButton = styled.div`
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: #fff;
+    background: #FFC947;
   }
 `;
 
@@ -111,11 +160,3 @@ export const Forms = styled(Form)`
   align-items: center;
   color: red;
 `;
-
-export const emailAddress = css`
-   &{color} red; 
- `
-
- export const Component = styled.div`
-  color: &{emailAddress}
- `

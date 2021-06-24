@@ -13,7 +13,7 @@ import {
   FromNoteImp,
   DropDownLabel,
   FormLink,
-  ADropdown,
+  Dropdown,
   FormButton
 } from "./ApplicationHome.elements";
 
@@ -46,7 +46,7 @@ const ApplicationOneHome = ({ now, data, setOrdered, category, choice, businessa
               to tick just one box. for each Segment
             </FormNote>
           </Label>
-          <ADropdown>
+          <Dropdown>
             <DropDownLabel>
               What category best describes your Business or Innovation?
             </DropDownLabel>
@@ -58,8 +58,8 @@ const ApplicationOneHome = ({ now, data, setOrdered, category, choice, businessa
               placeholder="Select a Category"
               autoFocus
             />
-          </ADropdown>
-          <ADropdown>
+          </Dropdown>
+          <Dropdown>
             <DropDownLabel>
               Are you a business owner or Innovator?
             </DropDownLabel>
@@ -70,8 +70,8 @@ const ApplicationOneHome = ({ now, data, setOrdered, category, choice, businessa
               placeholder="Select a Category"
               autoFocus
             />
-          </ADropdown>
-          <ADropdown>
+          </Dropdown>
+          <Dropdown>
             <DropDownLabel>
               Business Age
             </DropDownLabel>
@@ -82,15 +82,13 @@ const ApplicationOneHome = ({ now, data, setOrdered, category, choice, businessa
               placeholder="Select a Category"
               autoFocus
             />
-          </ADropdown>
+          </Dropdown>
           <FormLink to='/applicationtwo'>
             <FormButton>
               Continue
             </FormButton>
           </FormLink>
-
-          <ProgressBar variant='success' now={now} label={`${now}%`} animated />;
-
+          <ProgressBar variant='success' now={now} label={`${now}%`} />
         </ApplyForm>
       </Container>
     </Apply>
