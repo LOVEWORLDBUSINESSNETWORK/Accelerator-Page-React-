@@ -70,7 +70,7 @@ const Navbar = ({ alt = "logoimg" }) => {
               </NavItem>
 
               <NavItem>
-                <NavLink to="log-in">Log in</NavLink>
+                <NavLink to="dashboard">Log in</NavLink>
               </NavItem>
               <NavItemBtn>
                 {button ? (
